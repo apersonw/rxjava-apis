@@ -1,4 +1,4 @@
-package org.rxjava.api.user.client.domain;
+package org.rxjava.api.user.dashboard.domain;
 
 import lombok.Getter;
 import lombok.Setter;

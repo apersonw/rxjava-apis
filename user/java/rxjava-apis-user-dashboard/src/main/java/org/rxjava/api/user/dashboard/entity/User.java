@@ -1,4 +1,4 @@
-package org.rxjava.api.user.client.entity;
+package org.rxjava.api.user.dashboard.entity;
 
 import lombok.Getter;
 import lombok.Setter;

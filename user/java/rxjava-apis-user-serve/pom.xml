@@ -9,6 +9,6 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../../</relativePath>
     </parent>
-    <artifactId>rxjava-apis-user-dashboard</artifactId>
+    <artifactId>rxjava-apis-user-serve</artifactId>
     <packaging>jar</packaging>
 </project>

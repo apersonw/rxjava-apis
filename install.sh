@@ -13,3 +13,11 @@ cd ../../../
 cd ./user/java/rxjava-apis-user-serve/
 ./install.sh
 cd ../../../
+
+cd ./goods/java/rxjava-apis-goods-dashboard/
+./install.sh
+cd ../../../
+
+cd ./goods/java/rxjava-apis-goods-client/
+./install.sh
+cd ../../../

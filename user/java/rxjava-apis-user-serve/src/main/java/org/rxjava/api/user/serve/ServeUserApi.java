@@ -21,15 +21,15 @@ public class ServeUserApi {
 		this.clientAdapter = clientAdapter;
 	}
 
-	public Mono<LoginInfo> getByToken(String token) {
+	public Mono<LoginInfo> tokenToLoginInfo(String token) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("token", token);
-		String _url = ApiUtils.expandUriComponent("serve/logininfo/{token}", _uriVariables);
+		String _url = ApiUtils.expandUriComponent("serve/token/{token}/logininfo", _uriVariables);
 
 		return clientAdapter.request("GET", _url, null, _0Type);
 	}
 
-	public Mono<User> getUserByToken(String token) {
+	public Mono<User> tokenToUser(String token) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("token", token);
 		String _url = ApiUtils.expandUriComponent("serve/token/{token}/user", _uriVariables);

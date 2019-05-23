@@ -10,13 +10,13 @@ import org.rxjava.apikit.client.*;
 
 import org.rxjava.api.admin.example.form.TestForm;
 
-public class TestApi {
+public class AdminTestApi {
 	private ClientAdapter clientAdapter;
 
-	public TestApi() {
+	public AdminTestApi() {
 	}
 
-	public TestApi(ClientAdapter clientAdapter) {
+	public AdminTestApi(ClientAdapter clientAdapter) {
 		this.clientAdapter = clientAdapter;
 	}
 

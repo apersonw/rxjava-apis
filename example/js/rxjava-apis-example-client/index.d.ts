@@ -1,5 +1,5 @@
 
-import TestApi from '.org/rxjava/api/person/example/TestApi';
+import TestApi from './//TestApi';
 
 
 export {

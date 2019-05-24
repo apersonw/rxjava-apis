@@ -1,5 +1,5 @@
 
-import TestApi from './//TestApi';
+import TestApi from './TestApi';
 
 
 export {

@@ -1,0 +1,11 @@
+{
+  "name" : "rxjava-api-example",
+  "version" : "1.0.34",
+  "main" : "index.js",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "rxjava-api-core" : "^1.0.6"
+  }
+}

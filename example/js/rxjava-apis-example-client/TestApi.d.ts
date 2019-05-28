@@ -1,5 +1,5 @@
 import TestForm from './form/TestForm'
-import {AbstractApi} from 'apikit-core'
+import {AbstractApi} from 'rxjava-api-core'
 
 
 /**

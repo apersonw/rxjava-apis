@@ -6,6 +6,6 @@
     "test" : "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies" : {
-    "rxjava-api-core" : "^1.0.7"
+    "rxjava-api-core" : "^1.0.12"
   }
 }

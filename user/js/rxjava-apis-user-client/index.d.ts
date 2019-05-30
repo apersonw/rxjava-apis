@@ -1,7 +1,7 @@
 
-import ServeUserApi from './ServeUserApi';
+import UserApi from './UserApi';
 
 
 export {
-    ServeUserApi,
+    UserApi,
 };

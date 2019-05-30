@@ -48,7 +48,7 @@ var ServeUserApi =
             value: function tokenToLoginInfo(token) {
                 var _path = {};
                 _path["token"] = token;
-                return _get(_getPrototypeOf(ServeUserApi.prototype), "_request", this).call(this, "user", "GET", "serve/token/{token}/logininfo", _path, null;
+                return _get(_getPrototypeOf(ServeUserApi.prototype), "_request", this).call(this, "user", "GET", "serve/token/{token}/logininfo", _path, null);
             }
         }]);
         _createClass(ServeUserApi, [{
@@ -56,7 +56,7 @@ var ServeUserApi =
             value: function tokenToUser(token) {
                 var _path = {};
                 _path["token"] = token;
-                return _get(_getPrototypeOf(ServeUserApi.prototype), "_request", this).call(this, "user", "GET", "serve/token/{token}/user", _path, null;
+                return _get(_getPrototypeOf(ServeUserApi.prototype), "_request", this).call(this, "user", "GET", "serve/token/{token}/user", _path, null);
             }
         }]);
 

@@ -47,7 +47,7 @@ var UserApi =
             key: "getCurrentUser",
             value: function getCurrentUser() {
                 var _path = null;
-                return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "GET", "currentUser", _path, null;
+                return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "GET", "currentUser", _path, null);
             }
         }]);
         _createClass(UserApi, [{
@@ -68,7 +68,7 @@ var UserApi =
             key: "system",
             value: function system() {
                 var _path = null;
-                return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "GET", "", _path, null;
+                return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "GET", "", _path, null);
             }
         }]);
 

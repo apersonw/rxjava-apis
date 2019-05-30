@@ -1,25 +1,18 @@
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-value: true
+    value: true
 });
-exports.default = exports.AdminTestApi = void 0;
-
-require("core-js/modules/es7.symbol.async-iterator");
-
-require("core-js/modules/es6.symbol");
-
-require("core-js/modules/es6.reflect.get");
-
-require("core-js/modules/es6.object.set-prototype-of");
+exports.default = exports.TestApi = void 0;
 
 var _rxjavaApiCore = require("rxjava-api-core");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return right[Symbol.hasInstance](left); } else { return left instanceof right; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
@@ -39,51 +32,30 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-
-var _TestForm = _interopRequireDefault(require('./form/TestForm'))
-
-
 var TestApi =
-/*#__PURE__*/
-function (_AbstractApi) {
-_inherits(TestApi, _AbstractApi);
+    /*#__PURE__*/
+    function (_AbstractApi) {
+        _inherits(TestApi, _AbstractApi);
 
-function TestApi() {
-_classCallCheck(this, TestApi);
+        function TestApi() {
+            _classCallCheck(this, TestApi);
 
-return _possibleConstructorReturn(this, _getPrototypeOf(TestApi).apply(this, arguments));
-}
+            return _possibleConstructorReturn(this, _getPrototypeOf(TestApi).apply(this, arguments));
+        }
 
-    
-    _createClass(TestApi, [{
-    key: "testPath",
+        _createClass(TestApi, [{
+            key: "testPath",
+            value: function testPath(id, form) {
+                var _path = {};
+                _path["id"] = id;
+                return _get(_getPrototypeOf(TestApi.prototype), "_request", this).call(this, "example", "GET", "client/testPath/{id}", _path, form);
+            }
+        }]);
 
-    /**
-     *
-     *
-     * <div class='http-info'>http 说明<ul>
-     * <li><b>Uri:</b>dashboard/testPath/{id}</li>
-     * <li><b>PathVariable:</b> string id</li>
-     * <li><b>Form:</b>TestFormtestPath</li>
-     * <li><b>Model:</b> number</li>
-     * <li>需要登录</li>
-     * </ul>
-     * </div>
-     * @see TestForm
-     */
-    value: function testPath(id, form) {
-        var _path = {};
-        _path["id"] = id;
-
-        return _get(_getPrototypeOf(TestApi.prototype), "_request", this).call(this, "example", "GET", "client/testPath/{id}", _path, form);
-    }
-    }]);
-    
-
-return TestApi;
-}(_rxjavaApiCore.AbstractApi);
+        return TestApi;
+    }(_rxjavaApiCore.AbstractApi);
 
 exports.TestApi = TestApi;
-var testApi = { TestApi };
+var testApi = new TestApi();
 var _default = testApi;
 exports.default = _default;

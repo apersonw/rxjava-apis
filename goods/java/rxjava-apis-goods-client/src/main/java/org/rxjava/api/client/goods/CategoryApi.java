@@ -1,4 +1,4 @@
-package org.rxjava.api.goods.client;
+package org.rxjava.api.client.goods;
 
 import reactor.core.publisher.Mono;
 
@@ -8,8 +8,8 @@ import java.util.concurrent.Future;
 
 import org.rxjava.apikit.client.*;
 
-import org.rxjava.api.goods.client.form.CategoryListForm;
-import org.rxjava.api.goods.client.model.CategoryModel;
+import org.rxjava.api.client.goods.form.CategoryListForm;
+import org.rxjava.api.client.goods.model.CategoryModel;
 
 public class CategoryApi {
 	private ClientAdapter clientAdapter;

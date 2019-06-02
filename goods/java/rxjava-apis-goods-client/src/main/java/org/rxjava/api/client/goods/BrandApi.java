@@ -1,4 +1,4 @@
-package org.rxjava.api.goods.client;
+package org.rxjava.api.client.goods;
 
 import reactor.core.publisher.Mono;
 
@@ -8,8 +8,8 @@ import java.util.concurrent.Future;
 
 import org.rxjava.apikit.client.*;
 
-import org.rxjava.api.goods.client.form.BrandListForm;
-import org.rxjava.api.goods.client.model.BrandModel;
+import org.rxjava.api.client.goods.form.BrandListForm;
+import org.rxjava.api.client.goods.model.BrandModel;
 
 public class BrandApi {
 	private ClientAdapter clientAdapter;

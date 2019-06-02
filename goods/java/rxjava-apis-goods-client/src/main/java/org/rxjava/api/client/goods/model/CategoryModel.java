@@ -1,25 +1,22 @@
-package org.rxjava.api.goods.client.model;
+package org.rxjava.api.client.goods.model;
 
 import lombok.Getter;
 import lombok.Setter;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.AbstractMap.SimpleImmutableEntry;
-import org.rxjava.api.goods.client.entity.Resource;
+import org.rxjava.api.client.goods.entity.Resource;
 
 @Getter
 @Setter
-public class GoodsModel {
+public class CategoryModel {
 
-	private int coverPrice;
 	private String id;
 	private String name;
-	private List<SkuModel> skus;
+	private String parentId;
 	private Resource thumb;
 
 	public List<Entry<String, Object>> encode(String $parent, List<Entry<String, Object>> $list) {
-
-		$list.add(new SimpleImmutableEntry<>($parent + "coverPrice", coverPrice));
 
 		if (id != null) {
 			$list.add(new SimpleImmutableEntry<>($parent + "id", id));
@@ -29,10 +26,8 @@ public class GoodsModel {
 			$list.add(new SimpleImmutableEntry<>($parent + "name", name));
 		}
 
-		if (skus != null && (!skus.isEmpty())) {
-			for (int i = 0; i < skus.size(); i++) {
-				skus.get(i).encode($parent + "skus" + "[" + i + "].", $list);
-			}
+		if (parentId != null) {
+			$list.add(new SimpleImmutableEntry<>($parent + "parentId", parentId));
 		}
 
 		if (thumb != null) {

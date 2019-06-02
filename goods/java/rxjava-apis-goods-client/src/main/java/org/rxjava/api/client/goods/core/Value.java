@@ -1,4 +1,4 @@
-package org.rxjava.api.goods.client.model;
+package org.rxjava.api.client.goods.core;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,9 +8,9 @@ import java.util.AbstractMap.SimpleImmutableEntry;
 
 @Getter
 @Setter
-public class BrandModel {
+public class Value<V> {
 
 	public List<Entry<String, Object>> encode(String $parent, List<Entry<String, Object>> $list) {
-		return $list;
+		throw new RuntimeException("不支持泛型");
 	}
 }

@@ -1,4 +1,4 @@
-package org.rxjava.api.goods.client.form;
+package org.rxjava.api.client.goods.form;
 
 import lombok.Getter;
 import lombok.Setter;

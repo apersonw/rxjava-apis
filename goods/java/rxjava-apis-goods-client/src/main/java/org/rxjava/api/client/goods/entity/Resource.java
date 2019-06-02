@@ -1,4 +1,4 @@
-package org.rxjava.api.goods.client.entity;
+package org.rxjava.api.client.goods.entity;
 
 import lombok.Getter;
 import lombok.Setter;

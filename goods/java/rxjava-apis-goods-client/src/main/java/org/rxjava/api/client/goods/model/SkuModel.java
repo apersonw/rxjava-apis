@@ -1,12 +1,12 @@
-package org.rxjava.api.goods.client.model;
+package org.rxjava.api.client.goods.model;
 
 import lombok.Getter;
 import lombok.Setter;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.AbstractMap.SimpleImmutableEntry;
-import org.rxjava.api.goods.client.core.KeyValue;
-import org.rxjava.api.goods.client.entity.Resource;
+import org.rxjava.api.client.goods.core.KeyValue;
+import org.rxjava.api.client.goods.entity.Resource;
 
 @Getter
 @Setter

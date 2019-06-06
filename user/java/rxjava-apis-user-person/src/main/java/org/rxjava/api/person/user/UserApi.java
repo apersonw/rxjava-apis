@@ -1,0 +1,75 @@
+package org.rxjava.api.person.user;
+
+import reactor.core.publisher.Mono;
+
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.concurrent.Future;
+
+import org.rxjava.apikit.client.*;
+
+import org.rxjava.api.person.user.form.LoginByPhoneSmsForm;
+import org.rxjava.api.person.user.form.UserSaveForm;
+import org.rxjava.api.person.user.model.UserModel;
+
+public class UserApi {
+	private ClientAdapter clientAdapter;
+
+	public UserApi() {
+	}
+
+	public UserApi(ClientAdapter clientAdapter) {
+		this.clientAdapter = clientAdapter;
+	}
+
+	public Mono<UserModel> getCurrentUser() {
+		Map<String, Object> _uriVariables = new HashMap<>();
+		String _url = ApiUtils.expandUriComponent("currentUser", _uriVariables);
+
+		return clientAdapter.request("GET", _url, null, _0Type);
+	}
+
+	public Mono<String> loginByPhoneSms(LoginByPhoneSmsForm form) {
+		Map<String, Object> _uriVariables = new HashMap<>();
+		String _url = ApiUtils.expandUriComponent("loginByPhoneSms", _uriVariables);
+
+		List<Entry<String, Object>> _form = form.encode("", new ArrayList<>());
+		return clientAdapter.request("POST", _url, _form, _1Type);
+	}
+
+	public Mono<UserModel> saveUser(UserSaveForm form) {
+		Map<String, Object> _uriVariables = new HashMap<>();
+		String _url = ApiUtils.expandUriComponent("user", _uriVariables);
+
+		List<Entry<String, Object>> _form = form.encode("", new ArrayList<>());
+		return clientAdapter.request("POST", _url, _form, _2Type);
+	}
+
+	public Mono<String> system() {
+		Map<String, Object> _uriVariables = new HashMap<>();
+		String _url = ApiUtils.expandUriComponent("", _uriVariables);
+
+		return clientAdapter.request("GET", _url, null, _3Type);
+	}
+
+	public Mono<java.util.ArrayList<String>> testClient() {
+		Map<String, Object> _uriVariables = new HashMap<>();
+		String _url = ApiUtils.expandUriComponent("testClient", _uriVariables);
+
+		return clientAdapter.request("GET", _url, null, _4Type);
+	}
+
+	public void setclientAdapter(ClientAdapter clientAdapter) {
+		this.clientAdapter = clientAdapter;
+	}
+
+	public ClientAdapter getclientAdapter() {
+		return clientAdapter;
+	}
+
+	private static final ApiType _0Type = ApiUtils.type(UserModel.class);
+	private static final ApiType _1Type = ApiUtils.type(String.class);
+	private static final ApiType _2Type = ApiUtils.type(UserModel.class);
+	private static final ApiType _3Type = ApiUtils.type(String.class);
+	private static final ApiType _4Type = ApiUtils.type(java.util.ArrayList.class, String.class);
+}

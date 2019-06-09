@@ -7,8 +7,8 @@
         <groupId>org.rxjava.apis</groupId>
         <artifactId>rxjava-apis</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../../</relativePath>
+        <relativePath>../../..</relativePath>
     </parent>
-    <artifactId>rxjava-apis-example-client</artifactId>
+    <artifactId>rxjava-apis-user-person</artifactId>
     <packaging>jar</packaging>
 </project>

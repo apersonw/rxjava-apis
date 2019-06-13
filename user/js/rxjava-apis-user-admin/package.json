@@ -1,6 +1,6 @@
 {
   "name" : "rxjava-apis-user-admin",
-  "version" : "1.0.86",
+  "version" : "1.0.104",
   "main" : "index.js",
   "scripts" : {
     "test" : "echo \"Error: no test specified\" && exit 1"

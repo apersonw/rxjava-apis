@@ -52,13 +52,6 @@ public class UserApi {
 		return clientAdapter.request("GET", _url, null, _3Type);
 	}
 
-	public Mono<java.util.ArrayList<String>> testClient() {
-		Map<String, Object> _uriVariables = new HashMap<>();
-		String _url = ApiUtils.expandUriComponent("testClient", _uriVariables);
-
-		return clientAdapter.request("GET", _url, null, _4Type);
-	}
-
 	public void setclientAdapter(ClientAdapter clientAdapter) {
 		this.clientAdapter = clientAdapter;
 	}
@@ -71,5 +64,4 @@ public class UserApi {
 	private static final ApiType _1Type = ApiUtils.type(String.class);
 	private static final ApiType _2Type = ApiUtils.type(UserModel.class);
 	private static final ApiType _3Type = ApiUtils.type(String.class);
-	private static final ApiType _4Type = ApiUtils.type(java.util.ArrayList.class, String.class);
 }

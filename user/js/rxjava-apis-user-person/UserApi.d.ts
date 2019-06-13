@@ -60,17 +60,6 @@ declare class UserApi extends AbstractApi {
      * </div>
     */
     system():Promise<string>;
-   /**
-     * 
-    *
-     * <div class='http-info'>http 说明<ul>
-     * <li><b>Uri:</b>testClient</li>
-     * <li><b>Model:</b> string[]</li>
-     * <li>需要登录</li>
-     * </ul>
-     * </div>
-    */
-    testClient():Promise<string[]>;
 
 }
 export { UserApi };

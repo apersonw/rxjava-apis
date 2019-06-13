@@ -24,7 +24,7 @@ public class InnerUserApi {
 	public Mono<LoginInfo> tokenToLoginInfo(String token) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("token", token);
-		String _url = ApiUtils.expandUriComponent("serve/token/{token}/logininfo", _uriVariables);
+		String _url = ApiUtils.expandUriComponent("inner/token/{token}/logininfo", _uriVariables);
 
 		return clientAdapter.request("GET", _url, null, _0Type);
 	}
@@ -32,7 +32,7 @@ public class InnerUserApi {
 	public Mono<User> tokenToUser(String token) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("token", token);
-		String _url = ApiUtils.expandUriComponent("serve/token/{token}/user", _uriVariables);
+		String _url = ApiUtils.expandUriComponent("inner/token/{token}/user", _uriVariables);
 
 		return clientAdapter.request("GET", _url, null, _1Type);
 	}

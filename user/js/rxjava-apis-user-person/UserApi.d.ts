@@ -49,17 +49,6 @@ declare class UserApi extends AbstractApi {
      * @see UserSaveForm
     */
     saveUser(form:UserSaveForm):Promise<UserModel>;
-   /**
-     * 
-    *
-     * <div class='http-info'>http 说明<ul>
-     * <li><b>Uri:</b></li>
-     * <li><b>Model:</b> string</li>
-     * <li>需要登录</li>
-     * </ul>
-     * </div>
-    */
-    system():Promise<string>;
 
 }
 export { UserApi };

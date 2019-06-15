@@ -64,13 +64,6 @@ var UserApi =
                 return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "POST", "user", _path, form);
             }
         }]);
-        _createClass(UserApi, [{
-            key: "system",
-            value: function system() {
-                var _path = null;
-                return _get(_getPrototypeOf(UserApi.prototype), "_request", this).call(this, "user", "GET", "", _path, null);
-            }
-        }]);
 
         return UserApi;
     }(_rxjavaApiCore.AbstractApi);

@@ -23,7 +23,7 @@ public class AdminTestApi {
 	public Mono<Integer> testPath(String id, TestForm form) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("id", id);
-		String _url = ApiUtils.expandUriComponent("dashboard/testPath/{id}", _uriVariables);
+		String _url = ApiUtils.expandUriComponent("admin/testPath/{id}", _uriVariables);
 
 		List<Entry<String, Object>> _form = form.encode("", new ArrayList<>());
 		return clientAdapter.request("GET", _url, _form, _0Type);

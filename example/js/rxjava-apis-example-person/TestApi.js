@@ -44,6 +44,13 @@ var TestApi =
         }
 
         _createClass(TestApi, [{
+            key: "checkTest",
+            value: function checkTest() {
+                var _path = null;
+                return _get(_getPrototypeOf(TestApi.prototype), "_request", this).call(this, "example", "GET", "person/checkTest", _path, null);
+            }
+        }]);
+        _createClass(TestApi, [{
             key: "testPath",
             value: function testPath(id, form) {
                 var _path = {};

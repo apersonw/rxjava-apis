@@ -12,6 +12,17 @@ declare class TestApi extends AbstractApi {
      * 
     *
      * <div class='http-info'>http 说明<ul>
+     * <li><b>Uri:</b>person/checkTest</li>
+     * <li><b>Model:</b> string</li>
+     * <li>需要登录</li>
+     * </ul>
+     * </div>
+    */
+    checkTest():Promise<string>;
+   /**
+     * 
+    *
+     * <div class='http-info'>http 说明<ul>
      * <li><b>Uri:</b>person/testPath/{id}</li>
      * <li><b>PathVariable:</b> string id</li>
      * <li><b>Form:</b>TestFormtestPath</li>

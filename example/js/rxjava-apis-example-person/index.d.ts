@@ -1,9 +1,7 @@
 
-import AuthApi from './AuthApi';
-import DemoApi from './DemoApi';
+import TestApi from './TestApi';
 
 
 export {
-    AuthApi,
-    DemoApi,
+    TestApi,
 };

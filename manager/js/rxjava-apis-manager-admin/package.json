@@ -1,0 +1,11 @@
+{
+  "name" : "rxjava-apis-manager-admin",
+  "version" : "1.0.137",
+  "main" : "index.js",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "rxjava-api-core" : "latest"
+  }
+}

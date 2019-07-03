@@ -10,11 +10,14 @@ import java.util.AbstractMap.SimpleImmutableEntry;
 @Setter
 public class LoginInfo {
 
+	private boolean forbidden;
 	private String identityType;
 	private String userAuthId;
 	private String userId;
 
 	public List<Entry<String, Object>> encode(String $parent, List<Entry<String, Object>> $list) {
+
+		$list.add(new SimpleImmutableEntry<>($parent + "forbidden", forbidden));
 
 		if (identityType != null) {
 			$list.add(new SimpleImmutableEntry<>($parent + "identityType", identityType));

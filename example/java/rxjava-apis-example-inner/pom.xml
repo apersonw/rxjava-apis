@@ -6,15 +6,15 @@
     <parent>
         <groupId>org.rxjava</groupId>
         <artifactId>rxjava</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.3</version>
     </parent>
-    <artifactId>rxjava-apis-user-inner</artifactId>
+    <artifactId>rxjava-apis-example-inner</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>org.rxjava</groupId>
             <artifactId>rxjava-apikit-core</artifactId>
-            <version>1.0.5</version>
+            <version>1.0.3</version>
         </dependency>
     </dependencies>
 </project>

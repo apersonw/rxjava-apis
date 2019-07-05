@@ -29,9 +29,10 @@ public class InnerLoginInfoApi {
 		return clientAdapter.request("GET", _url, _form, _0Type);
 	}
 
-	public Mono<LoginInfo> checkToken(String token) {
+	public Mono<LoginInfo> checkToken(String token, String loginType) {
 		Map<String, Object> _uriVariables = new HashMap<>();
 		_uriVariables.put("token", token);
+		_uriVariables.put("loginType", loginType);
 		String _url = ApiUtils.expandUriComponent("inner/checkToken/{token}", _uriVariables);
 
 		return clientAdapter.request("GET", _url, null, _1Type);

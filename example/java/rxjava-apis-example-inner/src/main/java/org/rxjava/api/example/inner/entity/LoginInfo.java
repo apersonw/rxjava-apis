@@ -12,6 +12,7 @@ public class LoginInfo {
 
 	private boolean forbidden;
 	private String identityType;
+	private String loginType;
 	private String userAuthId;
 	private String userId;
 
@@ -21,6 +22,10 @@ public class LoginInfo {
 
 		if (identityType != null) {
 			$list.add(new SimpleImmutableEntry<>($parent + "identityType", identityType));
+		}
+
+		if (loginType != null) {
+			$list.add(new SimpleImmutableEntry<>($parent + "loginType", loginType));
 		}
 
 		if (userAuthId != null) {

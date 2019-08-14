@@ -4,13 +4,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-Object.defineProperty(exports, "ManagerApi", {
+Object.defineProperty(exports, "AdminManagerApi", {
         enumerable: true,
         get: function get() {
-        return _ManagerApi.default;
+        return _AdminManagerApi.default;
     }
 });
-var _ManagerApi = _interopRequireDefault(require("./ManagerApi"));
+var _AdminManagerApi = _interopRequireDefault(require("./AdminManagerApi"));
 
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

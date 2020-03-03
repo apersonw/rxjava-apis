@@ -6,6 +6,7 @@ import java.util.*;
 import java.util.Map.Entry;
 import java.util.AbstractMap.SimpleImmutableEntry;
 import org.fenglin.api.person.order.types.ObjectId;
+import org.fenglin.api.person.order.status.OrderStatus;
 
 @Getter
 @Setter
@@ -18,7 +19,7 @@ public class Order extends BaseEntity {
 	private ObjectId merchantId;
 	private Date payTime;
 	private ObjectId shopId;
-	private String status;
+	private OrderStatus status;
 	private ObjectId userId;
 
 	public List<Entry<String, Object>> encode(String $parent, List<Entry<String, Object>> $list) {
@@ -52,7 +53,7 @@ public class Order extends BaseEntity {
 		}
 
 		if (status != null) {
-			$list.add(new SimpleImmutableEntry<>($parent + "status", status));
+			status.encode($parent + "status.", $list);
 		}
 
 		if (userId != null) {
